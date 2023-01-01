@@ -27,16 +27,22 @@ module.exports = {
       }
       return 'Northerly';
     }
-    const city = interaction.options.getString('city');
+    const deUmlaut = (word) => {
+      word = word.replace(/ä/g, 'ae');
+      word = word.replace(/ö/g, 'oe');
+      word = word.replace(/ü/g, 'ue');
+      word = word.replace(/ß/g, 'ss');
+      return word;
+    };
+    const city = deUmlaut(interaction.options.getString('city'));
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.WEATHER_API_KEY}`;
     axios({
       method: 'get',
       url: apiUrl,
     }).then(async (response) => {
-      console.log(response.data);
       const embed = new EmbedBuilder()
         .setTitle(`Weather in ${response.data.name}`)
-        .setColor('Random')
+        .setColor('Default')
         .setThumbnail(
           `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
         )
@@ -73,7 +79,7 @@ module.exports = {
             value: `${moment
               .unix(response.data.dt)
               .utcOffset(+1)
-              .format('dddd DD-MMMM-YYYY HH:mm')}`,
+              .format('dddd DD-MMMM-YYYY HH:mm')} \n (UTC+1 Berlin)`,
             inline: true,
           }
         );
