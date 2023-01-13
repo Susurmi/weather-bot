@@ -14,7 +14,7 @@
 <h3 align="center">Discord Weather Bot</h3>
 
   <p align="center">
-    a simple discord bot to request and show the weather of a location provided by a user.<br />
+    a simple discord bot to request and show the weather of a location provided by users.<br />
     feel free to use any parts of the code for you're own project.
     <br />
     <br />
@@ -34,9 +34,9 @@ With the following steps you can set this bot up for yourself.
 
 ### Prerequisites
 
-First up you need your on bot user. You can set one up on [Discord's Developer Portal](https://discord.com/developers/applications).<br>
+First up you need your own discord bot user. You can set one up on [Discord's Developer Portal](https://discord.com/developers/applications).<br>
 You also need to have [NodeJS](https://nodejs.org/en/) (Version 16.19.0 and above) installed.<br>
-As the last step go over to [OpenWeatherMap](https://openweathermap.org/) and signUp to get a free tier API Key.
+As the last prerequisite go over to [OpenWeatherMap](https://openweathermap.org/) and signUp to get a free tier API Key.
 
 ### Installation
 
@@ -91,7 +91,7 @@ after executing the command you should be seeing an embed with all the infos:<br
 <details>
   <summary>Example Response</summary>
   <a href="https://github.com/susurmi/weather-bot">
-    <img src="https://i.im.ge/2023/01/13/s2Inuf.weather-embed.jpg" alt="Weather Bot Command">
+    <img src="https://i.im.ge/2023/01/13/s2Inuf.weather-embed.jpg" alt="Weather Bot Embed">
   </a>  
 </details>
 
