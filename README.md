@@ -78,22 +78,12 @@ Go into your discord server and type
 then type the city name of choice into the (required!) city text field.
 <br>
 
-   <details>
-    <summary>Example Command</summary> 
-      <a href="https://github.com/susurmi/weather-bot">
-        <img src="https://i.im.ge/2023/01/13/s2It8S.weather-command.jpg" alt="Weather Bot Command">
-      </a>  
-    </details>
+<img src="https://i.im.ge/2023/01/13/s2It8S.weather-command.jpg" alt="Weather Bot Command">
+
+after executing the command you should be seeing an embed with all the infos:
 <br>
 
-after executing the command you should be seeing an embed with all the infos:<br>
-
-<details>
-  <summary>Example Response</summary>
-  <a href="https://github.com/susurmi/weather-bot">
-    <img src="https://i.im.ge/2023/01/13/s2Inuf.weather-embed.jpg" alt="Weather Bot Embed">
-  </a>  
-</details>
+<img src="https://i.im.ge/2023/01/13/s2Inuf.weather-embed.jpg" alt="Weather Bot Embed">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
