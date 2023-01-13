@@ -48,7 +48,7 @@ As the last step go over to [OpenWeatherMap](https://openweathermap.org/) and si
    ```sh
    npm install
    ```
-3. Enter your credentials in `.env`
+3. Create a .env file and put following credentials into it:
 
    ```env
    BOT_TOKEN=<DISCORD_BOT_TOKEN>
@@ -80,7 +80,9 @@ then type the city name of choice into the (required!) city text field.
 
    <details>
     <summary>Example Command</summary> 
-      <img src="https://i.im.ge/2023/01/13/s2It8S.weather-command.jpg" alt="Weather Bot Command">
+      <a href="https://github.com/susurmi/weather-bot">
+        <img src="https://i.im.ge/2023/01/13/s2It8S.weather-command.jpg" alt="Weather Bot Command">
+      </a>  
     </details>
 <br>
 
