@@ -1,4 +1,4 @@
-const { default: axios } = require('axios');
+const axios = require('axios');
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const moment = require('moment');
 moment.locale('en');
@@ -6,7 +6,7 @@ moment.locale('en');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('weather')
-    .setDescription('shows the wather for a location.')
+    .setDescription('shows the weather for a location.')
     .addStringOption((option) =>
       option
         .setName('city')
@@ -44,9 +44,7 @@ module.exports = {
         const embed = new EmbedBuilder()
           .setTitle(`Weather in **${response.data.name}**`)
           .setColor('Default')
-          .setThumbnail(
-            `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-          )
+          .setThumbnail(`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
           .addFields(
             {
               name: 'Degrees',
@@ -90,8 +88,7 @@ module.exports = {
       .catch(async (error) => {
         console.log(error);
         await interaction.reply({
-          content:
-            'There was an error while executing this command! Please try again later.',
+          content: 'There was an error while executing this command! Please try again later.',
           ephemeral: true,
         });
         return;
