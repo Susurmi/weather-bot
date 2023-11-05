@@ -19,7 +19,10 @@ module.exports = {
 	 */
 
 	async execute(interaction) {
-		// eslint-disable-next-line jsdoc/require-param-description, jsdoc/require-jsdoc
+		/**
+		 * @param {number} degree
+		 * @returns {string}
+		 */
 		function degToText(degree) {
 			if (degree > 337.5) return 'Northerly ⬆';
 			if (degree > 292.5) return 'North Westerly ↖';
